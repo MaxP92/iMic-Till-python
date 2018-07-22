@@ -13,8 +13,17 @@ Python-based implementation of an iMic (Till Photonics) control (unofficial)
 - x32 folder : if you are using Python 32 bits
 - x64 folder : if you are using Python 64 bits
  
-
  --------------
+ 
+  -----------------
+  Info :  
+  The x32 version controls directly the DLL.  
+  The x64 uses msl-loadlib to create a client/server interface to control in Python 64bits.  
+  Use "open_com" to open the COM port and get an handle. After use "imic_ini" to init the instrument.  
+  You can now use the other functions.  
+  The code has been extracted from a GUI, and has not been (yet?) adapted to a basic use. But any Python programmer should find what he wants inside it by cherry-picking !
+  
+  -----------------
  
 Consider saying thanks ! --> maxime.pinsard@outlook.com
 
